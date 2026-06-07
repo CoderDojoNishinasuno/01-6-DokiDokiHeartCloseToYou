@@ -11,10 +11,10 @@ def on_forever():
     if きょり < 55:
         basic.show_icon(IconNames.HEART, 50)
         basic.show_icon(IconNames.SMALL_HEART, 50)
-    elif きょり < 70:
+    elif きょり < 65:
         basic.show_icon(IconNames.HEART, 150)
         basic.show_icon(IconNames.SMALL_HEART, 150)
-    elif きょり < 85:
+    elif きょり < 75:
         basic.show_icon(IconNames.HEART, 250)
         basic.show_icon(IconNames.SMALL_HEART, 250)
     else:
@@ -24,5 +24,5 @@ basic.forever(on_forever)
 
 def on_forever2():
     radio.send_number(0)
-    basic.pause(100)
+    basic.pause(500)
 basic.forever(on_forever2)
